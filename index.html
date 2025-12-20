@@ -1,36 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="./assets/icon/nm.png" type="image/x-icon" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/icon/nm.png" type="image/x-icon" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./dist/css/style.css" />
+  <!-- Google Fonts : POPPINS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
 
-    <!-- Animate Style -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 
-    <!-- AOS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <title>Dashboard Pemantauan Lingkungan South China Sea</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  </head>
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- CSS KAMU (HARUS PALING BAWAH) -->
+  <link rel="stylesheet" href="./dist/css/style.css" />
+
+  <title>Dashboard Pemantauan Lingkungan South China Sea</title>
+</head>
+
+
   <body id="home">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg py-3 animate__animated animate__fadeInDown" style="background-color: #82C0C9;">
+    <nav class="navbar navbar-expand-lg py-3 sticky-top animate__animated animate__fadeInDown"
+     style="background-color: #82C0C9;">
+
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="./assets/icon/UGM-removebg-preview.png" alt="Logo" width="140" height="50" class="d-inline-block align-text-top rounded" />
@@ -95,7 +111,7 @@
 <!-- End Hero -->
 
     <!-- Hero -->
-    <section class="hero overflow-hidden mt-3" style="background-image: url('assets/images/DESAIN\ PRGG.png')">
+    <section class="hero overflow-hidden mt-3" style="background-image: url(./assets/images/DESAIN\ PRGG.png);">
       <div class="container">
         <div class="hero-box d-flex align-items-center justify-content-between flex-md-row flex-column gap-md-0 gap-5">
           <div class="box animate__animated animate__fadeInLeft animate__delay-1s">
@@ -130,32 +146,73 @@
 
 <section
   style="
-    background-image: url('assets/images/DESAIN PRGG.png');
+    background-image: url('./assets/images/DESAIN PRGG.png');
     background-size: cover;
     background-position: center;
-    padding: 40px 0 20px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+    padding: 80px 20px;
+    text-align: center;
   "
 >
-  <video
-    src="assets/images/video 1.mp4"
-    controls
-    playsinline
-    width="300"
-    height="533">
-  </video>
+  <!-- Judul -->
+  <h2
+    style="
 
-  <video
-    src="assets/images/video 2.mp4"
-    controls
-    playsinline
-    width="300"
-    height="533">
-  </video>
+      font-size: 2.2rem;
+      font-weight: 600;
+      color: #1f3c88;
+      margin-bottom: 10px;
+    "
+  >
+    Tonton video ini yuk!
+  </h2>
+
+  <p
+    style="
+      font-size: 1rem;
+      color: #444;
+      margin-bottom: 40px;
+    "
+  >
+    Visualisasi kondisi lingkungan dan dinamika kawasan Laut Cina Selatan.
+  </p>
+
+  <!-- Video -->
+  <div
+    style="
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    "
+  >
+    <video
+      src="assets/images/video 1.mp4"
+      controls
+      playsinline
+      style="
+        width: 280px;
+        aspect-ratio: 9 / 16;
+        border-radius: 20px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+        background: black;
+      "
+    ></video>
+
+    <video
+      src="assets/images/video 2.mp4"
+      controls
+      playsinline
+      style="
+        width: 280px;
+        aspect-ratio: 9 / 16;
+        border-radius: 20px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+        background: black;
+      "
+    ></video>
+  </div>
 </section>
+
 
 <!-- Hero Background Only -->
 <section class="hero overflow-hidden mt-3"
@@ -174,7 +231,7 @@ class="kenaikanmukaairlaut" id="kenaikanmukaairlaut"
 <!-- End Hero -->
 
 <!-- Kenaikan Muka Air Laut -->
-    <section style="background-image: url('assets/images/DESAIN\ PRGG.png')">
+    <section style="background-image: url(./assets/images/DESAIN\ PRGG.png);">
       <div class="container">
         <div class="about-box text-center">
           <h1 class="fw-bold mb-4 mt-5" data-aos="fade-up" data-aos-duration="1000">Kenaikan Muka Air Laut</h1>
@@ -238,7 +295,7 @@ class="suhupermukaanlaut" id="suhupermukaanlaut"
 
 
 <!-- Suhu Permukaan Laut -->
-    <section style="background-image: url('assets/images/DESAIN\ PRGG.png')">
+    <section style="background-image: url(./assets/images/DESAIN\ PRGG.png);">
       <div class="container">
         <div class="about-box text-center">
           <h1 class="fw-bold mb-4 mt-5" data-aos="fade-up" data-aos-duration="1000">Suhu Permukaan Laut</h1>
@@ -330,18 +387,18 @@ class="tumpahanminyak" id="tumpahanminyak"
           <div class="box pt-4 d-flex gap-3 flex-md-row flex-column">
             <div class="service p-4 shadow  text-white rounded-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" style="background-color: #4169E1;">
               <i class="fa-solid fa-folder-tree mb-3"></i>
-              <h4 class="mb-3 fw-bold">Tren Temporal Luas Oil Slick (2020–2025)</h4>
-              <p class="lh-lg">Grafik batang menunjukkan luas oil slick di Laut Cina Selatan berfluktuasi setiap tahun. Tahun 2022 merupakan nilai terendah, sedangkan 2023 dan 2025 mengalami peningkatan signifikan. Pola ini menunjukkan bahwa tumpahan minyak dipengaruhi faktor dinamis seperti aktivitas pelayaran, eksplorasi migas, dan kondisi oseanografi, serta mengindikasikan meningkatnya tekanan aktivitas manusia setelah 2022.</p>
+              <h4 class="mb-3 fw-bold">Area Terdeteksi Oil Spill Sekitar 5490 km2</h4>
+              <p class="lh-lg">Pemrosesan citra satelit mengidentifikasi total luas area laut yang tercemar minyak (oil slick) mencapai 5.490 km². Area ini tersebar dan memerlukan pemantauan intensif untuk menilai dampak lingkungan dan menentukan lokasi pembersihan prioritas.</p>
             </div>
             <div class="service p-4 shadow text-white rounded-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700" style="background-color: #4169E1;">
               <i class="fa-solid fa-user-tie mb-3"></i>
-              <h4 class="mb-3 fw-bold">Tidak Ada Report Bukan Berarti Tidak Ada Tumpahan Minyak</h4>
-              <p class="lh-lg">Pada periode tersebut tidak tercatat oil spill berskala besar, tetapi grafik menunjukkan oil slick tetap muncul setiap tahun. Hal ini mengindikasikan bahwa pencemaran minyak di Laut Cina Selatan bersifat kronis dan berulang, yang kemungkinan berasal dari jejak minyak kapal (ship oil traces) akibat aktivitas pelayaran rutin, kebocoran operasional, atau pembuangan ilegal meskipun tanpa insiden besar.</p>
+              <h4 class="mb-3 fw-bold">Area Terdeteksi Oil Spill Terluas Berada di Perairan Sekitar Kepulauan Riau</h4>
+              <p class="lh-lg">Hasil deteksi menunjukkan konsentrasi tumpahan minyak terbesar berada di sekitar perairan Kepulauan Riau. Hal ini menuntut kewaspadaan tinggi bagi otoritas setempat dan industri pelayaran yang beroperasi di Selat Malaka.</p>
             </div>
             <div class="service p-4 shadow  text-white rounded-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900" style="background-color: #4169E1;">
               <i class="fa-solid fa-star mb-3"></i>
-              <h4 class="mb-3 fw-bold">Jejak Kecil Tetap Berdampak</h4>
-              <p class="lh-lg">Nilai oil slick tahun 2025 sebesar ±16,7 km² menunjukkan bahwa tumpahan minyak tetap signifikan secara spasial, meskipun tidak berasal dari kejadian besar. Luasan ini kemungkinan merupakan akumulasi jejak minyak kapal akibat aktivitas pelayaran yang intens. Walaupun volumenya relatif kecil, tumpahan minyak tersebut tetap berpotensi mengganggu kualitas perairan dan ekosistem laut, sehingga dampak pencemaran perlu mendapat perhatian.</p>
+              <h4 class="mb-3 fw-bold">Deteksi Hanya Pada Area Pesisir Karena Faktor Keterbatasan Data Sentinel-1</h4>
+              <p class="lh-lg">Deteksi tumpahan minyak hanya pada area yang dekat dengan daratan. Hal tersebut terjadi karena keterbatasan ketersediaan data Sentinel-1 pada area laut lepas. Oleh karena itu, area laut lepas tidak terdeteksi tumpahan minyaknya.</p>
             </div>
         </div>
       </div>
@@ -473,9 +530,9 @@ class="mangrove" id="mangrove"
     </section>
     <!-- Mangrove-->
 
-          
+
 <!-- Hero Background Only -->
-<section class="hero overflow-hidden mt-3"
+<section class="hero overflow-hidden"
 class="terumbukarang" id="terumbukarang"
   style="
     background-image: url('assets/images/DESAIN\ PRGG.png');
@@ -488,58 +545,38 @@ class="terumbukarang" id="terumbukarang"
   <div class="container">
         <div class="about-box text-center">
           <h1 class="fw-bold mb-4 mt-5" data-aos="fade-up" data-aos-duration="1000">Risiko perubahan iklim dan lingkungan bukan lagi perkiraan, melainkan kenyataan! </h1>
-          <h2 class="fw-bold mb-4 mt-5" data-aos="fade-up" data-aos-duration="1000">Kami menawarkan jasa pembuatan analisis pemantauan lingkungan sesuai permintaan untuk membantu organisasi Anda untuk mitigasi risiko dan keberlanjutan. <br />
-          Ambil langkah proaktif. Rencanakan masa depan berdasarkan data, bukan tebakan.</h2>
+          <h2 class="fw-bold mb-4 mt-5" data-aos="fade-up" data-aos-duration="1000">Ambil langkah proaktif! Rencanakan masa depan berdasarkan data, bukan tebakan!</h2>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSdVkHMy7P1iiiiAyNLUcqgdcHKH5x-t7bKP2LQGPQR3XoceEw/viewform?fbzx=-6961219111162297480" target="_blank" class="btn btn-danger">ORDER HERE</a>
               </div>
 </section>
 <!-- End Hero -->
 
-    <!-- Footer -->
-    <section class="footer" style="background-color: #82C0C9;">
-      <div class="container">
-        <div class="footer-box">
-          <div class="row justify-content-between row-gap-4">
-            <div class="col col-md-4 col-12 text-black">
-              <div class="d-flex align-items-center gap-2">
-                <img src="./assets/icon/UGM-removebg-preview.png" alt="Logo" width="140" height="50" class="d-inline-block align-text-top rounded" />
-                <h2 class="fw-bold text-black">Dashboard Pemantauan Lingkungan</h2>
-              </div>
-              <p class="lh-lg opacity-75 m-0"></p>
-            </div>
-            <div class="col col-md-2 col-12 d-flex flex-column text-black gap-2">
-              <h4 class="fw-bold">Menu</h4>
-              <a href="#home" class="text-black text-decoration-none">Home</a>
-              <a href="#kenaikanmukaairlaut" class="text-black text-decoration-none">Kenaikan Muka Air Laut</a>
-              <a href="#suhupermukaanlaut" class="text-black text-decoration-none">Suhu Permukaan Laut</a>
-              <a href="#tumpahanminyak" class="text-black text-decoration-none">tumpahan Minyak</a>
-              <a href="#terumbukarang" class="text-black text-decoration-none">Terumbu Karang</a>
-              <a href="#mangrove" class="text-black text-decoration-none">Mangrove</a>
-            </div>
-            <div class="col col-md-4 col-12 d-flex flex-column text-black gap-2">
-              <h4 class="fw-bold">Contact Us</h4>
-              <p class="m-0 d-flex align-items-center gap-2">
-                <i class="fa-solid fa-envelope"></i>
-                prggtim29tahun2025@gmail.com
-              </p>
-              <p class="m-0 d-flex align-items-center gap-2">
-                <i class="fa-solid fa-phone"></i>
-                (0274)-367-503
-              </p>
-              <p class="m-0 d-flex align-items-center gap-2 lh-lg">
-                <i class="fa-solid fa-location-dot"></i>
-                Jl. Grafika Bulaksumur No.2, Sendowo, Sinduadi, Kec. Mlati, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281
-              </p>
-            </div>
-          </div>
+<!-- Footer -->
+<section class="footer py-3" style="background-color: #82C0C9;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-auto text-center text-black">
+        <div class="d-flex flex-column flex-md-row align-items-center gap-2">
+          <img
+            src="./assets/icon/UGM-removebg-preview.png"
+            alt="Logo"
+            width="140"
+            height="50"
+            class="d-inline-block align-text-top rounded"
+          />
+          <h2 class="text-black m-0">
+            Dashboard Pemantauan Lingkungan South China Sea
+          </h2>
         </div>
-
-        <div class="copyright text-center text-black">
-          <p class="lh-lg">&copy; Copyright by <span class="fw-bold">PRGG 2025 KELOMPOK 29</span>, All Rights Reserved.</p>
-        </div>
+        <p class="lh-lg opacity-75 m-0">
+          PRGG 2025 – Kelompok 29
+        </p>
       </div>
-    </section>
-    <!-- Footer -->
+    </div>
+  </div>
+</section>
+<!-- Footer -->
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
@@ -548,8 +585,4 @@ class="terumbukarang" id="terumbukarang"
       AOS.init();
     </script>
   </body>
-
-</html>
-
-
-
+        </html>
